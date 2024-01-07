@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental Fleet</title>
+    <link rel="stylesheet" href="bootstrap.css" />
+    <style>
+      .container2 {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .header {
+        background-color: #3f87a6;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .header h1 {
+        margin: 0;
+        color: #333;
+      }
+
+      .navbar {
+        display: flex;
+        flex-direction: column;
+        background-color: #333;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .navbar ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .navbar ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+
+      .navbar ul a li {
+        text-decoration: none;
+        color: #fff;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      .container {
+        width: 50%;
+        margin: auto;
+        overflow: hidden;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .card {
+        width: 100%;
+        margin-bottom: 20px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .card-image {
+        width: 100%;
+        /* height: 200px; */
+        object-fit: cover;
+      }
+
+      .card-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .card-subtitle {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      .card-price {
+        font-size: 20px;
+        font-weight: bold;
+        color: #4caf50;
+        margin-bottom: 10px;
+      }
+
+      .card-description {
+        margin-bottom: 10px;
+      }
+
+      .card-cta {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+
+      .footer {
+        background-color: #f8f9fa;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      .footer p {
+        margin: 0;
+        color: #333;
+      }
+
+      .yellow-underline:after {
+        content: "";
+        display: block;
+        border: 1px solid #f6cc51;
+        border-radius: 50px;
+        width: 50px;
+        margin-top: 5px;
+      }
+
+      /* .insta {
+  /* border: 2px solid; */
+
+      .container-fluid2 {
+        display: flex;
+        flex-direction: row-reverse;
+        /* border: 2px solid; */
+        box-shadow: 2px 2px 6px 5px;
+        padding: 8px;
+        background-color: rgb(216, 214, 214);
+      }
+
+      .container-fluid2 .row .col {
+        /* border: 2px solid blue; */
+        width: 96px;
+        padding: 8px;
+        margin: auto;
+      }
+
+      footer {
+        font-size: 0.7em;
+        border: 2px solid;
+        background-color: black;
+        color: white;
+        margin-top: auto;
+        /* min-height: 100vh; */
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container2">
+      <div class="header">Car Rental Home Page</div>
+    </div>
+    <div class="navbar">
+      <ul>
+        <a href="Home_page_1.html"><li>Home</li></a>
+        <a href="About.html"><li>About</li></a>
+        <a href="Contact.html"><li>Contact</li></a>
+      </ul>
+    </div>
+    <div class="container">
+      <h1>Car Rental Fleet</h1>
+      <div class="card">
+        <img class="card-image" src="Images/Bugatti-Chiron.webp" alt="Car" />
+        <h2 class="card-title">Bugatti-Chiron</h2>
+        <h3 class="card-subtitle"></h3>
+        <p class="card-price">$1009 / day</p>
+        <p class="card-description">
+          Model name : Bugatti Chiron <br />
+          Mileage : 5.59 kmpl <br />
+          Max Power : 1600Nm@2000-6000rpm <br />
+          Seating Capacity : 2 <br />
+          Fuel Type :  Petrol <br />
+        </p>
+        <a href="#" class="card-cta">Rent Now</a>
+      </div>
+
+      <div class="card">
+        <img class="card-image" src="Images/bmw-8-series.webp" alt="Car" />
+        <h2 class="card-title">BMW</h2>
+        <h3 class="card-subtitle">Series-8</h3>
+        <p class="card-price">$1569 / day</p>
+        <p class="card-description">
+          Mileage : 5.59 kmpl <br />
+          Max Power : 600bhp@6000rpm <br />
+          Seating Capacity : 4 <br />
+          Fuel Type :  Petrol. <br />
+        </p>
+        <a href="#" class="card-cta">Rent Now</a>
+      </div>
+
+      <div class="card">
+        <img class="card-image" src="Images/Rolls Royce-Ghost.webp" alt="Car" />
+        <h2 class="card-title">Rolls Royce</h2>
+        <h3 class="card-subtitle">Ghost</h3>
+        <p class="card-price">$1395 / day</p>
+        <p class="card-description">
+          Mileage : 6.3 kmpl <br />
+          Max Power : 563bhp@5250rpm <br />
+          Seating Capacity:5 <br />
+          Fuel Type : Petrol <br />
+        </p>
+        <a href="#" class="card-cta">Rent Now</a>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-image"
+          src="Images/Toyota -Land Cruiser2.webp"
+          alt="Car"
+        />
+        <h2 class="card-title">Toyota</h2>
+        <h3 class="card-subtitle">Land Cruiser</h3>
+        <p class="card-price">$1648 / day</p>
+        <p class="card-description">
+          Mileage : 11.0 kmpl <br />
+          Max Power :304.41bhp@4000rpm <br />
+          Seating Capacity : 5 <br />
+          Fuel Type : Diesel <br />
+        </p>
+        <a href="#" class="card-cta">Rent Now</a>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-image"
+          src="Images/Rolls Royce-Phantom.jpg"
+          alt="Car"
+        />
+        <h2 class="card-title">Rolls Royce</h2>
+        <h3 class="card-subtitle">Phantom</h3>
+        <p class="card-price">$3695 / day</p>
+        <p class="card-description">
+          Mileage : 9.8 kmpl <br />
+          Max Power : 563bhp@5000rpm <br />
+          Seating Capacity:5 <br />
+          Fuel Type : Petrol <br />
+        </p>
+        <a href="#" class="card-cta">Rent Now</a>
+      </div>
+      <center>
+        <a href="#" class="card-cta">Show more....</a>
+      </center>
+      <!-- Add more car cards as needed -->
+    </div>
+
+    <br /><br />
+    <h5 class="yellow-underline">Social Media</h5>
+    <footer>
+      <div class="container-fluid">
+        <!-- <div class="container"> -->
+        <div class="row">
+          <div class="col">
+            <h3>Social Media</h3>
+            <p>Visit us on Facebook</p>
+            <p>Follow us on instragram</p>
+            <p>Follow us on Twiter</p>
+            <p>Watch us on Youtube</p>
+            <p>Visit us on Pinterest</p>
+            <p>Visit on Blogger</p>
+            <p>Visit us on VK</p>
+          </div>
+          <div class="col">
+            <h3>Luxury car rental</h3>
+            <p>Hire Lamborghinni Aventra</p>
+            <p>Hire Lamborghini Aventador LP 700-4 Pirelli Edition</p>
+            <p>Rent Ferrari 488 GTB</p>
+            <p>Hire McLaren 650 S</p>
+            <p>Hire Bentley GTC</p>
+            <p>Rent Rolls Royce Phantom Drophead</p>
+            <p>Rent Porsche 911 GT3 RS</p>
+            <p>Hire MCLAREN 720S</p>
+            <p>Hire Aston Martin Vanquish Volante</p>
+          </div>
+          <div class="col">
+            <h3>Drive Services</h3>
+            <p>Bentley Mulsanne</p>
+            <p>Bentley Flying Spur</p>
+            <p>Mercedes GLS</p>
+          </div>
+          <div class="col">
+            <h3>shuttles service</h3>
+            <p>Rolls Royce Ghost - Limousine Service</p>
+            <p>Mercedes S-Class 350 L - Limousine Service</p>
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </footer>
+  </body>
+</html>
